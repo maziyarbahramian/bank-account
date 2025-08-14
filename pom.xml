@@ -4,6 +4,14 @@
   <groupId>com.techbank</groupId>
   <artifactId>bank-account</artifactId>
   <version>1.0.0</version>
-  <name>Archetype - bank-account</name>
-  <url>http://maven.apache.org</url>
+  <name>bank-account</name>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>../cqrs-es/cqrs.core</module>
+    <module>account.common</module>
+    <module>account.cmd</module>
+    <module>account.query</module>
+  </modules>
+
 </project>
