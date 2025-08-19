@@ -33,7 +33,7 @@ public class WithdrawFundsController {
             command.setId(id);
             commandDispatcher.send(command);
             return new ResponseEntity<>(
-                    new OpenAccountResponse("Withdraw funds request completed successfully"),
+                    new BaseResponse("Withdraw funds request completed successfully"),
                     HttpStatus.OK
             );
         } catch (IllegalStateException | AggregateNotFoundException e) {

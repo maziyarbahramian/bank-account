@@ -32,7 +32,7 @@ public class DepositFundsController {
             command.setId(id);
             commandDispatcher.send(command);
             return new ResponseEntity<>(
-                    new OpenAccountResponse("Deposit funds request completed successfully"),
+                    new BaseResponse("Deposit funds request completed successfully"),
                     HttpStatus.OK
             );
         } catch (IllegalStateException | AggregateNotFoundException e) {
