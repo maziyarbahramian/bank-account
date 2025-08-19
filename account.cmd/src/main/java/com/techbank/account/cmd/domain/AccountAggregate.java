@@ -75,6 +75,10 @@ public class AccountAggregate  extends AggregateRoot {
                 .build());
     }
 
+    public double getBalance() {
+        return balance;
+    }
+
     public void apply(AccountClosedEvent event) {
         this.id = event.getId();
         this.active = false;
