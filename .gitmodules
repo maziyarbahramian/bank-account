@@ -1,0 +1,3 @@
+[submodule "cqrs.core"]
+	path = cqrs.core
+	url = git@github.com:maziyarbahramian/cqrs.core.git
